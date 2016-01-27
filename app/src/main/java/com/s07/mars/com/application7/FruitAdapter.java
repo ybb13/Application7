@@ -1,6 +1,7 @@
 package com.s07.mars.com.application7;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +30,8 @@ public class FruitAdapter extends ArrayAdapter {
         TextView fruitname = (TextView)view.findViewById(R.id.fruit_text);
         ImageView fruitimage = (ImageView)view.findViewById(R.id.fruit_image);
         fruitname.setText(fruit.getName());
-       // fruitimage.setImageResource(fruit.getId());
+        fruitimage.setImageResource(fruit.getId());
+        Log.d("111","1111");
         return  view;
     }
 }
